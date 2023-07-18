@@ -1,0 +1,37 @@
+.listCard {
+    background-color: #f6f6f6;
+    border-radius: 1.56rem;
+    @include margin-padding(all, 2.68rem 0, all, 3.5rem 3.1rem);
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 3.12rem;
+}
+
+.card {
+    &__link {
+        width: 30%;
+        height: 21.25rem;
+    }
+    &__figure{
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+    &__img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 0.6rem;
+    }
+    &__figcaption {
+        position: absolute;
+        bottom: 0;
+        width: 75%;
+    }
+    &__title{
+        @include margin-padding (top, -3rem, all, 1.25rem 1.25rem 0 1.25rem);
+        font-size: 18px;
+        color: white;
+    }
+}

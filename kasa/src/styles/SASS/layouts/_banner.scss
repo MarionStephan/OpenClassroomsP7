@@ -1,0 +1,21 @@
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    @include margin-padding(top,4rem,null,null);
+
+    &__title {
+        position: absolute;
+        z-index: 1;
+        font-size: 3rem;
+    }
+
+    &__img {
+        height: 14rem;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 1.56rem;
+        filter: brightness(70%);
+    }
+}

@@ -4,7 +4,7 @@ import Apropos from '../../pages/Apropos';
 import Erreur from '../../pages/Erreur';
 import Home from '../../pages/Home';
 import Fiche from '../../pages/Fiche';
-import Header from '../../components/Header';
+import Header from '../../layout/Header';
 
 const IndexRoutes = () => {
     return(
@@ -14,7 +14,7 @@ const IndexRoutes = () => {
                 <Route path="/" element={<Home />} />
                 <Route exact path="/home" element={<Home />} />
                 <Route exact path="/apropos" element={<Apropos />} />
-                <Route exact path="/fiche" element={<Fiche />} />
+                <Route exact path="/fiche/:id" element={<Fiche />} />
                 <Route path="*" element={<Erreur />} />
             </Routes>
         </BrowserRouter>

@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    @include margin-padding(all, 0, all, 0);
+}
+
+html,
+body {
+    @include margin-padding(all, auto, all, 0);
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 1240px;
+    @include margin-padding(top, 40px,null,null);
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+a {
+    text-decoration: none;
+}

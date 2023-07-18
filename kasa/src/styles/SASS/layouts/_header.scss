@@ -1,0 +1,29 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+
+    &__logo {
+        width: 13rem;
+        height: 4.25rem;
+    }
+
+    & ul {
+        display: flex;
+        width: 25%;
+        justify-content: space-between;
+        font-size: 24px;
+    }
+
+    &__nav {
+        color: $colour-primary;
+        list-style: none;
+
+        &__link {
+            color: $colour-primary;
+
+            &__active {
+                text-decoration: underline;
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+
+@mixin brightness {
+    cursor: pointer;
+    filter: brightness(110%);
+}
+
+@mixin shadow ($params) {
+    box-shadow: $params;
+}
+
+@mixin lightenhover ($colour) {
+    background: lighten($colour, 35%);
+}
+
+@mixin transition($value) {
+    transition: $value;
+}
+
+@mixin delay($delay) {
+    animation-delay: $delay;
+}
+
+@mixin margin-padding($m-direction, $m-amount, $p-direction, $p-amount) {
+    @if $m-direction==all {
+        margin: $m-amount;
+    }
+
+    @else {
+        margin-#{$m-direction}: $m-amount;
+    }
+
+    @if $p-direction==all {
+        padding: $p-amount;
+    }
+
+    @else {
+        padding-#{$p-direction}: $p-amount;
+    }
+}
+
+@mixin borderradius($pixels...) {
+    border-radius: $pixels
+}
+
+@mixin desktop-only {
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+        @content;
+    }
+}
+
+@mixin tablet-only {
+    @media screen and (min-width: map-get($breakpoints, tablet)) {
+        @content
+    }
+}
