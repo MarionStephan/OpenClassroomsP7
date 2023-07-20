@@ -5,6 +5,7 @@ import Erreur from '../../pages/Erreur';
 import Home from '../../pages/Home';
 import Fiche from '../../pages/Fiche';
 import Header from '../../layout/Header';
+import Footer from '../../layout/Footer';
 
 const IndexRoutes = () => {
     return(
@@ -17,6 +18,7 @@ const IndexRoutes = () => {
                 <Route exact path="/fiche/:id" element={<Fiche />} />
                 <Route path="*" element={<Erreur />} />
             </Routes>
+        <Footer />
         </BrowserRouter>
     )
 }

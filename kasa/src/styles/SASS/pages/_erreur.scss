@@ -1,0 +1,21 @@
+.erreur{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__code{
+        @include margin-padding  (all, 169px 0 66px 0, null, null);
+        font-weight: 700;
+        font-size: 288px;
+        color: $colour-primary;
+    }
+    &__para{
+        color: $colour-primary;
+        font-size: 36px;
+    }
+    &__link{
+        @include margin-padding  (all, 180px 0 160px 0, null, null);
+        color: $colour-primary;
+        text-decoration: underline;
+        font-size: 18px;
+    }
+}

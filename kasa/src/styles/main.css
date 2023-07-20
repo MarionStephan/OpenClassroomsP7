@@ -1,4 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@keyframes rotateicon {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -34,6 +42,7 @@ a {
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .header__logo {
   width: 13rem;
@@ -90,6 +99,39 @@ a {
   filter: brightness(70%);
 }
 
+.collapse {
+  margin: 31px 210px;
+}
+.collapse__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  height: 47px;
+  padding: 0 30px 0 18px;
+  background-color: #FF6060;
+}
+.collapse__title {
+  color: white;
+  font-size: 24px;
+}
+.collapse__texte {
+  color: #FF6060;
+  margin-top: -18px;
+  padding: 36px 27px 19px 18px;
+  background-color: #F6F6F6;
+  position: relative;
+  z-index: -1;
+  border-radius: 10px;
+  font-size: 24px;
+}
+.collapse__chevron {
+  transition: 0.5s;
+}
+.collapse .rotated {
+  transform: rotate(180deg);
+}
+
 .listCard {
   background-color: #f6f6f6;
   border-radius: 1.56rem;
@@ -120,11 +162,39 @@ a {
 .card__figcaption {
   position: absolute;
   bottom: 0;
-  width: 75%;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 0 0 10px 10px;
 }
 .card__title {
   margin-top: -3rem;
-  padding: 1.25rem 1.25rem 0 1.25rem;
+  padding: 0 1.25rem 1.25rem 1.25rem;
   font-size: 18px;
   color: white;
+  width: 75%;
+}
+
+.erreur {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.erreur__code {
+  margin: 169px 0 66px 0;
+  font-weight: 700;
+  font-size: 288px;
+  color: #FF6060;
+}
+.erreur__para {
+  color: #FF6060;
+  font-size: 36px;
+}
+.erreur__link {
+  margin: 180px 0 160px 0;
+  color: #FF6060;
+  text-decoration: underline;
+  font-size: 18px;
 }/*# sourceMappingURL=main.css.map */

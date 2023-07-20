@@ -1,12 +1,10 @@
 import React from 'react'
-import Slideshow from '../../components/Fiche/Slideshow'
-import Footer from '../../layout/Footer';
+import FicheCompo from '../../components/FicheCompo'
 
 function Fiche() {
     return (
       <>
-      <Slideshow/>
-      <Footer/>
+      <FicheCompo/>
       </>
     )
   }

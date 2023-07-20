@@ -1,0 +1,36 @@
+.collapse {
+    @include margin-padding(all, 31px 210px, null, null);
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 10px;
+        height: 47px;
+        @include margin-padding(null, null, all, 0 30px 0 18px);
+        background-color: $colour-primary;
+    }
+
+    &__title {
+        color: white;
+        font-size: 24px;
+    }
+
+    &__texte {
+        color: $colour-primary;
+        @include margin-padding(top, -18px, all, 36px 27px 19px 18px);
+        background-color: #F6F6F6;
+        position: relative;
+        z-index: -1;
+        border-radius: 10px;
+        font-size: 24px;
+    }
+
+    &__chevron {
+        @include transition (0.5s)
+    }
+
+    .rotated {
+        transform: rotate(180deg);
+    }
+}

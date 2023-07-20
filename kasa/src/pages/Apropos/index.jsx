@@ -1,8 +1,13 @@
+import React from 'react'
+import AproposBanner from '../../components/Apropos/AproposBanner'
+import AproposCollapse from '../../components/Apropos/AproposCollapse';
+
 function Apropos(){
     return (
-        <div>
-            <h1>A Propos</h1>
-        </div>
+        <>
+        <AproposBanner/>
+        <AproposCollapse/>
+        </>
     )
 }
 

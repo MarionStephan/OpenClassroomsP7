@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useState,useEffect } from 'react'
 import Card from './Card'
-import logements from '../../data/logements.json'
 
 function ListCard() {
+    const [logements, setLogements] = useState([]);
+    useEffect(()=>{
+        fetch('http://localhost:3000/logements.json')
+        .then((response) => response.json())
+        .then((data) => setLogements(data))
+        .catch((error) => console.error('Erreur lors du chargement des données : ', error));
+    }, []);
     return (
         <section className='listCard'>
             {logements.map(({ id, title, cover }) => (
