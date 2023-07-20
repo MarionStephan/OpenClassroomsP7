@@ -1,5 +1,5 @@
 import React from 'react'
-import FicheCompo from '../../components/FicheCompo'
+import FicheCompo from '../../components/Fiche/index'
 
 function Fiche() {
     return (
