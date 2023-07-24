@@ -1,10 +1,10 @@
 import React from 'react'
-import FicheCompo from '../../components/Fiche/FicheCompo'
+import FicheLogement from '../../components/Fiche/FicheLogement'
 
 function Fiche() {
     return (
       <>
-      <FicheCompo/>
+      <FicheLogement/>
       </>
     )
   }

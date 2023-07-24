@@ -1,0 +1,68 @@
+.logement {
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__infos {
+        &__titre {
+            color: $colour-primary;
+            font-size: 36px;
+            font-weight: 500;
+        }
+
+        &__loc {
+            color: $colour-primary;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+    }
+    &__host{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        &__para{
+            text-align: right;
+            color: $colour-primary;
+            font-size: 18px;
+            width: 93px;
+        }
+        &__img{
+            width: 50px;
+            border-radius: 50%;
+        }
+    }
+&__section{
+    display: flex;
+    justify-content: space-between;
+    &__tags{
+        display: flex;
+        gap: 10px;
+        @include margin-padding (top, 20px, null,null);
+
+        span{
+            background-color: $colour-primary;
+            @include margin-padding (null,null, all, 2px 40px);
+            border-radius: 10px;
+            color: white;
+            line-height: 1.5;
+            font-size: 14px;
+        }
+    }
+    &__star{
+        display: flex;
+        gap: 20px;
+    }
+}
+    &__collapse {
+        display: flex;
+        justify-content: space-between;
+
+        .collapse {
+            width: 582px;
+            @include margin-padding(all, 31px 0, null, null);
+        }
+    }
+}

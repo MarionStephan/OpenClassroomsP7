@@ -16,7 +16,7 @@
         font-size: 24px;
     }
 
-    &__texte {
+    &__texte, &__list {
         color: $colour-primary;
         @include margin-padding(top, -18px, all, 36px 27px 19px 18px);
         background-color: #F6F6F6;
@@ -24,6 +24,7 @@
         z-index: -1;
         border-radius: 10px;
         font-size: 24px;
+        list-style: none;
     }
 
     &__chevron {
