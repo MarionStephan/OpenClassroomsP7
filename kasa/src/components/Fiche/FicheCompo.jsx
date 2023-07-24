@@ -1,8 +1,7 @@
 import React, { useState,useEffect } from 'react'
-import {NavLink, useParams} from 'react-router-dom'
+import {useParams} from 'react-router-dom'
 import Slideshow from "../../layout/Slideshow/index"
-import Collapse from "../../layout/Collapse/Collapse"
-import Card from "../Home/Card"
+import Erreur from '../../pages/Erreur'
 
 
 
@@ -17,14 +16,13 @@ function FicheCompo(){
     const { id } = useParams()
     const housing = logements.find(housing => housing.id === id)
     if (housing === undefined) { 
-        return <section className="error_page">
-            <p className="error_page_subtitle">Malheureusement, le logement que vous recherchez n'est plus disponible ou n'existe pas.</p>
-            <NavLink title='Accueil' end to='/home' className="error_page_link">Retourner sur la page d'accueil</NavLink> 
-        </section>
+        return (
+        <Erreur/>
+            )
     }
-
     return (
         <>
+            <Slideshow slides={housing.pictures}/>
         </>
 
 
