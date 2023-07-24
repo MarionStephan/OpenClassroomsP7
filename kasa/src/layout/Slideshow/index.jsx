@@ -29,7 +29,7 @@ function Slideshow(props) {
         {props.slides.map((picture, index) => (
           index === currentSlide &&(
             <img
-            className={`slideshow__pictures__img ${index === currentSlide ? "current-slide" : ""}`}
+            className={`slideshow__pictures__img ${index === currentSlide ? "slide-in" : "slide-out"}`}
             alt="banniere-page-logement"
             src={picture}
             key={index}

@@ -34,7 +34,7 @@
 
         &__arrow {
             cursor: pointer;
-            @include margin-padding(null,null,all,0 23px)
+            @include margin-padding(null, null, all, 0 23px)
         }
     }
 
@@ -48,3 +48,14 @@
     }
 
 }
+
+.slide-in {
+    animation: fadein 1s;
+    opacity: 1;
+}
+
+.slide-out {
+    animation: fadeout 1s;
+    opacity: 0;
+}
+
