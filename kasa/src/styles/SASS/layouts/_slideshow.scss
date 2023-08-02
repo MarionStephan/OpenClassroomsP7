@@ -50,12 +50,12 @@
 }
 
 .slide-in {
-    animation: fadein 1s;
+    animation: fadein 0.5s;
     opacity: 1;
 }
 
 .slide-out {
-    animation: fadeout 1s;
+    animation: fadeout 0.5s;
     opacity: 0;
 }
 

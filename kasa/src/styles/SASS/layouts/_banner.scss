@@ -4,11 +4,26 @@
     align-items: center;
     color: white;
     @include margin-padding(top,4rem,null,null);
+    @include tablet-only{
+        @include margin-padding(top,20px,null,null);
+    }
+    @include mobile-only{
+        justify-content: flex-start;
+
+    }
 
     &__title {
         position: absolute;
         z-index: 1;
         font-size: 3rem;
+    @include tablet-only{
+        font-size:2rem;
+    }
+    @include mobile-only{
+        font-size: 1.5rem;
+        width: 240px;
+        @include margin-padding(null,null, left, 16px );
+    }
     }
 
     &__img {
@@ -17,5 +32,8 @@
         object-fit: cover;
         border-radius: 1.56rem;
         filter: brightness(70%);
+        @include mobile-only{
+            height: 111px;
+        }
     }
 }

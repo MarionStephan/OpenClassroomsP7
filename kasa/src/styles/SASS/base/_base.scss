@@ -7,13 +7,18 @@ html,
 body {
     @include margin-padding(all, auto, all, 0);
     height: 100%;
+    
 }
 
 body {
     display: flex;
     flex-direction: column;
-    width: 1240px;
+    max-width: 1240px;
     @include margin-padding(top, 40px,null,null);
+    @include tablet-only{
+        @include margin-padding(all, 20px,null,null);
+
+    }
 }
 
 main {

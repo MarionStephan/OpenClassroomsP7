@@ -19,6 +19,7 @@ function FicheLogement() {
     }, []);
     const { id } = useParams()
     const housing = logements.find(housing => housing.id === id)
+    console.log(housing)
     if (housing === undefined) {
         return (
             <Erreur />

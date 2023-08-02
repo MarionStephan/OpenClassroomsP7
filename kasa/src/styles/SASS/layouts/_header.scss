@@ -6,6 +6,10 @@
     &__logo {
         width: 13rem;
         height: 4.25rem;
+        @include mobile-only{
+            width: 9rem;
+            height: 3rem;
+        }
     }
 
     & ul {
@@ -13,6 +17,13 @@
         width: 25%;
         justify-content: space-between;
         font-size: 24px;
+        @include tablet-only{
+            width: 40%;
+            
+        }
+        @include mobile-only{
+            font-size: 12px;
+        }
     }
 
     &__nav {
