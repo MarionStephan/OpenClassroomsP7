@@ -1,5 +1,25 @@
 .collapse {
-    @include margin-padding(all, 31px 210px, null, null);
+    @include margin-padding(all, 31px auto, null, null);
+    width: 1023px;
+
+    @include tablet-only {
+        width: 100%;
+    }
+
+    opacity: 0;
+    animation: menu 1s forwards;
+
+    &:nth-child(2) {
+        @include delay(2 * $delaydebut);
+    }
+
+    &:nth-child(3) {
+        @include delay(3 * $delaydebut);
+    }
+
+    &:nth-child(4) {
+        @include delay(4 * $delaydebut);
+    }
 
     &__header {
         display: flex;
@@ -14,9 +34,14 @@
     &__title {
         color: white;
         font-size: 24px;
+
+        @include mobile-only {
+            font-size: 13px;
+        }
     }
 
-    &__texte, &__list {
+    &__texte,
+    &__list {
         color: $colour-primary;
         @include margin-padding(top, -18px, all, 36px 27px 19px 18px);
         background-color: #F6F6F6;
@@ -25,10 +50,18 @@
         border-radius: 10px;
         font-size: 24px;
         list-style: none;
+
+        @include mobile-only {
+            font-size: 12px;
+        }
     }
 
     &__chevron {
-        @include transition (0.5s)
+        @include transition (0.5s);
+
+        @include mobile-only {
+            width: 13px;
+        }
     }
 
     .rotated {

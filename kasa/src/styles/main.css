@@ -27,33 +27,39 @@
     transform: scale(1);
   }
 }
+@keyframes menu {
+  0% {
+    transform: translatey(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translatey(0px);
+    opacity: 1;
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-html,
-body {
+html {
   margin: auto;
-  padding: 0;
+  padding: 0 20px;
   height: 100%;
 }
 
 body {
+  flex: 1 0 auto;
   display: flex;
   flex-direction: column;
   max-width: 1240px;
-  margin-top: 40px;
+  margin: 40px auto 0 auto;
 }
 @media screen and (max-width: 992px) {
   body {
-    margin: 20px;
+    margin-top: 20px;
   }
-}
-
-main {
-  flex: 1 0 auto;
 }
 
 a {
@@ -118,6 +124,7 @@ a {
   row-gap: 1.75rem;
   padding-bottom: 1.75rem;
   font-size: 1.5rem;
+  align-items: center;
 }
 
 .banner {
@@ -169,7 +176,24 @@ a {
 }
 
 .collapse {
-  margin: 31px 210px;
+  margin: 31px auto;
+  width: 1023px;
+  opacity: 0;
+  animation: menu 1s forwards;
+}
+@media screen and (max-width: 992px) {
+  .collapse {
+    width: 100%;
+  }
+}
+.collapse:nth-child(2) {
+  animation-delay: 0.6s;
+}
+.collapse:nth-child(3) {
+  animation-delay: 0.9s;
+}
+.collapse:nth-child(4) {
+  animation-delay: 1.2s;
 }
 .collapse__header {
   display: flex;
@@ -184,6 +208,11 @@ a {
   color: white;
   font-size: 24px;
 }
+@media screen and (max-width: 768px) {
+  .collapse__title {
+    font-size: 13px;
+  }
+}
 .collapse__texte, .collapse__list {
   color: #FF6060;
   margin-top: -18px;
@@ -195,8 +224,18 @@ a {
   font-size: 24px;
   list-style: none;
 }
+@media screen and (max-width: 768px) {
+  .collapse__texte, .collapse__list {
+    font-size: 12px;
+  }
+}
 .collapse__chevron {
   transition: 0.5s;
+}
+@media screen and (max-width: 768px) {
+  .collapse__chevron {
+    width: 13px;
+  }
 }
 .collapse .rotated {
   transform: rotate(180deg);
@@ -208,6 +247,12 @@ a {
   margin: 20px auto 30px auto;
   position: relative;
   border-radius: 25px;
+}
+@media screen and (max-width: 768px) {
+  .slideshow {
+    height: 255px;
+    margin: 20px auto 15px auto;
+  }
 }
 .slideshow__pictures {
   display: flex;
@@ -237,6 +282,12 @@ a {
   cursor: pointer;
   padding: 0 23px;
 }
+@media screen and (max-width: 768px) {
+  .slideshow__control__arrow {
+    height: 24px;
+    padding: 0;
+  }
+}
 .slideshow__index {
   position: absolute;
   text-align: center;
@@ -244,6 +295,11 @@ a {
   width: 100%;
   font-size: 18px;
   color: white;
+}
+@media screen and (max-width: 768px) {
+  .slideshow__index {
+    display: none;
+  }
 }
 
 .slide-in {
@@ -298,6 +354,14 @@ a {
     height: 255px;
   }
 }
+.card__link:hover {
+  box-shadow: 3px 3px 0 2px #FF6060;
+  border-radius: 0.6rem;
+  transition: 0.3s ease-in-out;
+}
+.card__link:hover .card__figcaption {
+  background: linear-gradient(180deg, rgba(255, 96, 96, 0.6572829816) 3%, rgba(2, 0, 36, 0.604061693) 88%);
+}
 .card__figure {
   height: 100%;
   width: 100%;
@@ -318,7 +382,7 @@ a {
   height: 100%;
   display: flex;
   align-items: flex-end;
-  border-radius: 0 0 10px 10px;
+  border-radius: 10px;
 }
 .card__title {
   margin-top: -3rem;
@@ -339,9 +403,21 @@ a {
   font-size: 288px;
   color: #FF6060;
 }
+@media screen and (max-width: 992px) {
+  .erreur__code {
+    font-size: 96px;
+  }
+}
 .erreur__para {
   color: #FF6060;
   font-size: 36px;
+}
+@media screen and (max-width: 992px) {
+  .erreur__para {
+    font-size: 18px;
+    width: 260px;
+    text-align: center;
+  }
 }
 .erreur__link {
   margin: 180px 0 160px 0;
@@ -353,43 +429,43 @@ a {
 .logement__header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .logement__header {
+    flex-direction: column;
+  }
 }
 .logement__infos__titre {
   color: #FF6060;
   font-size: 36px;
   font-weight: 500;
 }
+@media screen and (max-width: 768px) {
+  .logement__infos__titre {
+    font-size: 18px;
+  }
+}
 .logement__infos__loc {
   color: #FF6060;
   font-size: 18px;
   font-weight: 500;
 }
-.logement__host {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+@media screen and (max-width: 768px) {
+  .logement__infos__loc {
+    font-size: 14px;
+  }
 }
-.logement__host__para {
-  text-align: right;
-  color: #FF6060;
-  font-size: 18px;
-  width: 93px;
-}
-.logement__host__img {
-  width: 50px;
-  border-radius: 50%;
-}
-.logement__section {
-  display: flex;
-  justify-content: space-between;
-}
-.logement__section__tags {
+.logement__infos__tags {
   display: flex;
   gap: 10px;
   margin-top: 20px;
 }
-.logement__section__tags span {
+@media screen and (max-width: 768px) {
+  .logement__infos__tags {
+    margin-top: 10px;
+  }
+}
+.logement__infos__tags span {
   background-color: #FF6060;
   padding: 2px 40px;
   border-radius: 10px;
@@ -397,15 +473,82 @@ a {
   line-height: 1.5;
   font-size: 14px;
 }
+@media screen and (max-width: 768px) {
+  .logement__infos__tags span {
+    font-size: 10px;
+    padding: 2px 20px;
+  }
+}
+.logement__section {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .logement__section {
+    flex-direction: row-reverse;
+    margin-top: 16px;
+    align-items: center;
+  }
+}
+.logement__section__host {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logement__section__host__para {
+  text-align: right;
+  color: #FF6060;
+  font-size: 18px;
+  width: 93px;
+}
+@media screen and (max-width: 768px) {
+  .logement__section__host__para {
+    font-size: 12px;
+  }
+}
+.logement__section__host__img {
+  width: 50px;
+  border-radius: 50%;
+}
+@media screen and (max-width: 768px) {
+  .logement__section__host__img {
+    width: 32px;
+  }
+}
 .logement__section__star {
   display: flex;
   gap: 20px;
+}
+@media screen and (max-width: 768px) {
+  .logement__section__star {
+    height: 13px;
+    gap: 13px;
+  }
 }
 .logement__collapse {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 992px) {
+  .logement__collapse {
+    flex-direction: column;
+  }
+}
 .logement__collapse .collapse {
   width: 582px;
   margin: 31px 0;
+}
+@media screen and (max-width: 992px) {
+  .logement__collapse .collapse {
+    margin: 16px 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner__img__propos {
+    height: 336px;
+  }
 }/*# sourceMappingURL=main.css.map */

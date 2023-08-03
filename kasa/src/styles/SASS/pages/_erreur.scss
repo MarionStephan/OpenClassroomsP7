@@ -7,10 +7,18 @@
         font-weight: 700;
         font-size: 288px;
         color: $colour-primary;
+        @include tablet-only{
+            font-size: 96px;
+        }
     }
     &__para{
         color: $colour-primary;
         font-size: 36px;
+        @include tablet-only{
+            font-size: 18px;
+            width: 260px;
+            text-align: center;
+        }
     }
     &__link{
         @include margin-padding  (all, 180px 0 160px 0, null, null);

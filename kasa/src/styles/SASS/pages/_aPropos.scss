@@ -1,0 +1,5 @@
+.banner__img__propos{
+   @include mobile-only{
+        height: 336px;
+   }
+}

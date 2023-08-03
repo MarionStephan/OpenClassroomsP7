@@ -4,6 +4,11 @@
     @include margin-padding (all, 20px auto 30px auto, null, null);
     position: relative;
     border-radius: 25px;
+    @include mobile-only{
+        height: 255px;
+        @include margin-padding (all, 20px auto 15px auto, null, null);
+
+    }
 
     &__pictures {
         display: flex;
@@ -34,7 +39,12 @@
 
         &__arrow {
             cursor: pointer;
-            @include margin-padding(null, null, all, 0 23px)
+            @include margin-padding(null, null, all, 0 23px);
+            @include mobile-only{
+                height: 24px;
+                @include margin-padding(null, null, all, 0);
+
+            }
         }
     }
 
@@ -45,6 +55,9 @@
         width: 100%;
         font-size: 18px;
         color: white;
+        @include mobile-only{
+display: none;
+        }
     }
 
 }

@@ -31,3 +31,14 @@
     transform: scale(1);
   }
 }
+@keyframes menu {
+  0% {
+    transform: translatey(20px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translatey(0px);
+    opacity: 1;
+  }
+}
