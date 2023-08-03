@@ -3,27 +3,27 @@
     flex-direction: column;
     align-items: center;
     &__code{
-        @include margin-padding  (all, 169px 0 66px 0, null, null);
+        @include margin-padding  (all, 10.5625rem 0 4.125rem 0, null, null);
         font-weight: 700;
-        font-size: 288px;
+        font-size: 18rem;
         color: $colour-primary;
         @include tablet-only{
-            font-size: 96px;
+            font-size: 6rem;
         }
     }
     &__para{
         color: $colour-primary;
-        font-size: 36px;
+        font-size: 2.25rem;
         @include tablet-only{
-            font-size: 18px;
-            width: 260px;
+            font-size: 1.125rem;
+            width: 16.25rem;
             text-align: center;
         }
     }
     &__link{
-        @include margin-padding  (all, 180px 0 160px 0, null, null);
+        @include margin-padding  (all, 11.25rem 0 10rem 0, null, null);
         color: $colour-primary;
         text-decoration: underline;
-        font-size: 18px;
+        font-size: 1.125rem;
     }
 }

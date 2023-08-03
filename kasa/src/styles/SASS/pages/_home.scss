@@ -15,8 +15,8 @@
 
     @include mobile-only {
         background-color: transparent;
-        @include margin-padding(all, 20px 0, all, 0);
-        gap: 20px;
+        @include margin-padding(all, 1.25rem 0, all, 0);
+        gap: 1.25rem;
 
         &:after {
             display: none;
@@ -38,11 +38,11 @@
 
         @include mobile-only {
             width: 100%;
-            height: 255px;
+            height: 15.9375rem;
         }
 
         &:hover {
-            box-shadow: 3px 3px 0 2px #FF6060;
+            box-shadow: .1875rem .1875rem 0 .125rem $colour-primary;
             border-radius: 0.6rem;
             transition: 0.3s ease-in-out;
             & .card__figcaption{
@@ -73,12 +73,12 @@
         height: 100%;
         display: flex;
         align-items: flex-end;
-        border-radius: 10px;
+        border-radius: .625rem;
     }
 
     &__title {
         @include margin-padding (top, -3rem, all, 0 1.25rem 1.25rem 1.25rem);
-        font-size: 18px;
+        font-size: 1.125rem;
         color: white;
         width: 75%;
     }

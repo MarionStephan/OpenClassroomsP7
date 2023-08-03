@@ -45,7 +45,7 @@
 
 html {
   margin: auto;
-  padding: 0 20px;
+  padding: 0 1.25rem;
   height: 100%;
 }
 
@@ -53,12 +53,12 @@ body {
   flex: 1 0 auto;
   display: flex;
   flex-direction: column;
-  max-width: 1240px;
-  margin: 40px auto 0 auto;
+  max-width: 77.5rem;
+  margin: 2.5rem auto 0 auto;
 }
 @media screen and (max-width: 992px) {
   body {
-    margin-top: 20px;
+    margin-top: 1.25rem;
   }
 }
 
@@ -90,7 +90,7 @@ a {
   display: flex;
   width: 25%;
   justify-content: space-between;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 @media screen and (max-width: 992px) {
   .header ul {
@@ -99,7 +99,7 @@ a {
 }
 @media screen and (max-width: 768px) {
   .header ul {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 }
 .header__nav {
@@ -136,7 +136,7 @@ a {
 }
 @media screen and (max-width: 992px) {
   .banner {
-    margin-top: 20px;
+    margin-top: 1.25rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -157,8 +157,8 @@ a {
 @media screen and (max-width: 768px) {
   .banner__title {
     font-size: 1.5rem;
-    width: 240px;
-    padding-left: 16px;
+    width: 15rem;
+    padding-left: 1rem;
   }
 }
 .banner__img {
@@ -171,13 +171,13 @@ a {
 }
 @media screen and (max-width: 768px) {
   .banner__img {
-    height: 111px;
+    height: 6.9375rem;
   }
 }
 
 .collapse {
-  margin: 31px auto;
-  width: 1023px;
+  margin: 1.9375rem auto;
+  width: 63.9375rem;
   opacity: 0;
   animation: menu 1s forwards;
 }
@@ -199,34 +199,34 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-radius: 10px;
-  height: 47px;
-  padding: 0 30px 0 18px;
+  border-radius: 0.625rem;
+  height: 2.9375rem;
+  padding: 0 1.875rem 0 1.125rem;
   background-color: #FF6060;
 }
 .collapse__title {
   color: white;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 @media screen and (max-width: 768px) {
   .collapse__title {
-    font-size: 13px;
+    font-size: 0.8125rem;
   }
 }
 .collapse__texte, .collapse__list {
   color: #FF6060;
-  margin-top: -18px;
-  padding: 36px 27px 19px 18px;
+  margin-top: -1.125rem;
+  padding: 2.25rem 1.6875rem 1.1875rem 1.125rem;
   background-color: #F6F6F6;
   position: relative;
   z-index: -1;
-  border-radius: 10px;
-  font-size: 24px;
+  border-radius: 0.625rem;
+  font-size: 1.5rem;
   list-style: none;
 }
 @media screen and (max-width: 768px) {
   .collapse__texte, .collapse__list {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 }
 .collapse__chevron {
@@ -234,7 +234,7 @@ a {
 }
 @media screen and (max-width: 768px) {
   .collapse__chevron {
-    width: 13px;
+    width: 0.8125rem;
   }
 }
 .collapse .rotated {
@@ -242,16 +242,16 @@ a {
 }
 
 .slideshow {
-  height: 415px;
+  height: 25.9375rem;
   width: 100%;
-  margin: 20px auto 30px auto;
+  margin: 1.25rem auto 1.875rem auto;
   position: relative;
-  border-radius: 25px;
+  border-radius: 1.5625rem;
 }
 @media screen and (max-width: 768px) {
   .slideshow {
-    height: 255px;
-    margin: 20px auto 15px auto;
+    height: 15.9375rem;
+    margin: 1.25rem auto 0.9375rem auto;
   }
 }
 .slideshow__pictures {
@@ -264,14 +264,14 @@ a {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  border-radius: 25px;
+  border-radius: 1.5625rem;
 }
 .slideshow__control {
   align-items: center;
   display: flex;
   justify-content: space-between;
   left: 50%;
-  padding: 0 10px;
+  padding: 0 0.625rem;
   position: absolute;
   text-align: center;
   top: 50%;
@@ -280,20 +280,20 @@ a {
 }
 .slideshow__control__arrow {
   cursor: pointer;
-  padding: 0 23px;
+  padding: 0 1.4375rem;
 }
 @media screen and (max-width: 768px) {
   .slideshow__control__arrow {
-    height: 24px;
+    height: 1.5rem;
     padding: 0;
   }
 }
 .slideshow__index {
   position: absolute;
   text-align: center;
-  bottom: 25px;
+  bottom: 1.5625rem;
   width: 100%;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: white;
 }
 @media screen and (max-width: 768px) {
@@ -549,6 +549,6 @@ a {
 
 @media screen and (max-width: 768px) {
   .banner__img__propos {
-    height: 336px;
+    height: 21rem;
   }
 }/*# sourceMappingURL=main.css.map */

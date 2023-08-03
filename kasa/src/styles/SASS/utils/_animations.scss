@@ -33,12 +33,12 @@
 }
 @keyframes menu {
   0% {
-    transform: translatey(20px);
+    transform: translatey(1.25rem);
     opacity: 0;
   }
 
   100% {
-    transform: translatey(0px);
+    transform: translatey(0rem);
     opacity: 1;
   }
 }

@@ -1,6 +1,6 @@
 .collapse {
-    @include margin-padding(all, 31px auto, null, null);
-    width: 1023px;
+    @include margin-padding(all, 1.9375rem auto, null, null);
+    width: 63.9375rem;
 
     @include tablet-only {
         width: 100%;
@@ -25,34 +25,34 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        border-radius: 10px;
-        height: 47px;
-        @include margin-padding(null, null, all, 0 30px 0 18px);
+        border-radius: .625rem;
+        height: 2.9375rem;
+        @include margin-padding(null, null, all, 0 1.875rem 0 1.125rem);
         background-color: $colour-primary;
     }
 
     &__title {
         color: white;
-        font-size: 24px;
+        font-size: 1.5rem;
 
         @include mobile-only {
-            font-size: 13px;
+            font-size: .8125rem;
         }
     }
 
     &__texte,
     &__list {
         color: $colour-primary;
-        @include margin-padding(top, -18px, all, 36px 27px 19px 18px);
+        @include margin-padding(top, -1.125rem, all, 2.25rem 1.6875rem 1.1875rem 1.125rem);
         background-color: #F6F6F6;
         position: relative;
         z-index: -1;
-        border-radius: 10px;
-        font-size: 24px;
+        border-radius: .625rem;
+        font-size: 1.5rem;
         list-style: none;
 
         @include mobile-only {
-            font-size: 12px;
+            font-size: .75rem;
         }
     }
 
@@ -60,7 +60,7 @@
         @include transition (0.5s);
 
         @include mobile-only {
-            width: 13px;
+            width: .8125rem;
         }
     }
 

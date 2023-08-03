@@ -1,12 +1,12 @@
 .slideshow {
-    height: 415px;
+    height: 25.9375rem;
     width: 100%;
-    @include margin-padding (all, 20px auto 30px auto, null, null);
+    @include margin-padding (all, 1.25rem auto 1.875rem auto, null, null);
     position: relative;
-    border-radius: 25px;
+    border-radius: 1.5625rem;
     @include mobile-only{
-        height: 255px;
-        @include margin-padding (all, 20px auto 15px auto, null, null);
+        height: 15.9375rem;
+        @include margin-padding (all, 1.25rem auto .9375rem auto, null, null);
 
     }
 
@@ -19,7 +19,7 @@
             flex-shrink: 0;
             object-fit: cover;
             width: 100%;
-            border-radius: 25px;
+            border-radius: 1.5625rem;
         }
     }
 
@@ -29,7 +29,7 @@
         display: flex;
         justify-content: space-between;
         left: 50%;
-        padding: 0 10px;
+        padding: 0 .625rem;
         position: absolute;
         text-align: center;
         top: 50%;
@@ -39,9 +39,9 @@
 
         &__arrow {
             cursor: pointer;
-            @include margin-padding(null, null, all, 0 23px);
+            @include margin-padding(null, null, all, 0 1.4375rem);
             @include mobile-only{
-                height: 24px;
+                height: 1.5rem;
                 @include margin-padding(null, null, all, 0);
 
             }
@@ -51,9 +51,9 @@
     &__index {
         position: absolute;
         text-align: center;
-        bottom: 25px;
+        bottom: 1.5625rem;
         width: 100%;
-        font-size: 18px;
+        font-size: 1.125rem;
         color: white;
         @include mobile-only{
 display: none;

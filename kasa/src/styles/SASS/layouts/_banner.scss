@@ -5,7 +5,7 @@
     color: white;
     @include margin-padding(top,4rem,null,null);
     @include tablet-only{
-        @include margin-padding(top,20px,null,null);
+        @include margin-padding(top,1.25rem,null,null);
     }
     @include mobile-only{
         justify-content: flex-start;
@@ -21,8 +21,8 @@
     }
     @include mobile-only{
         font-size: 1.5rem;
-        width: 240px;
-        @include margin-padding(null,null, left, 16px );
+        width: 15rem;
+        @include margin-padding(null,null, left, 1rem );
     }
     }
 
@@ -33,7 +33,7 @@
         border-radius: 1.56rem;
         filter: brightness(70%);
         @include mobile-only{
-            height: 111px;
+            height: 6.9375rem;
         }
     }
 }

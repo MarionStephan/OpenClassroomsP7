@@ -4,7 +4,7 @@
 }
 
 html{
-    @include margin-padding(all, auto, all, 0 20px);
+    @include margin-padding(all, auto, all, 0 1.25rem);
     height: 100%;
 }
 
@@ -12,10 +12,10 @@ body {
     flex: 1 0 auto;
     display: flex;
     flex-direction: column;
-    max-width: 1240px;
-    @include margin-padding(all, 40px auto 0 auto,null,null);
+    max-width: 77.5rem;
+    @include margin-padding(all, 2.5rem auto 0 auto,null,null);
     @include tablet-only{
-        @include margin-padding(top, 20px,null,null);
+        @include margin-padding(top, 1.25rem,null,null);
 
     }
 }
