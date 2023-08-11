@@ -29,6 +29,9 @@
         height: 2.9375rem;
         @include margin-padding(null, null, all, 0 1.875rem 0 1.125rem);
         background-color: $colour-primary;
+        @include mobile-only{
+            height: 1.875rem;
+        }
     }
 
     &__title {

@@ -9,10 +9,10 @@ html{
 }
 
 body {
-    flex: 1 0 auto;
     display: flex;
     flex-direction: column;
     max-width: 77.5rem;
+    height: 100%;
     @include margin-padding(all, 2.5rem auto 0 auto,null,null);
     @include tablet-only{
         @include margin-padding(top, 1.25rem,null,null);
@@ -22,4 +22,8 @@ body {
 
 a {
     text-decoration: none;
+}
+
+#root{
+    height: 100%;
 }

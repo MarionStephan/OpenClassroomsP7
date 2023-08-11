@@ -1,6 +1,6 @@
 import React from 'react'
 import Banner from '../../layout/Banner'
-import imgBanner from '../../assets/imgBanner.svg'
+import imgBanner from '../../assets/imgBanner.webp'
 
 function HomeBanner() {
     return (
