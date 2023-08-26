@@ -6,13 +6,13 @@
         @include margin-padding  (all, 10.5625rem 0 4.125rem 0, null, null);
         font-weight: 700;
         font-size: 18rem;
-        color: $colour-primary;
+        color: $color-primary;
         @include tablet-only{
             font-size: 6rem;
         }
     }
     &__para{
-        color: $colour-primary;
+        color: $color-primary;
         font-size: 2.25rem;
         @include tablet-only{
             font-size: 1.125rem;
@@ -22,7 +22,7 @@
     }
     &__link{
         @include margin-padding  (all, 11.25rem 0 10rem 0, null, null);
-        color: $colour-primary;
+        color: $color-primary;
         text-decoration: underline;
         font-size: 1.125rem;
     }

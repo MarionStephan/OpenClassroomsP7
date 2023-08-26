@@ -8,10 +8,6 @@
     box-shadow: $params;
 }
 
-@mixin lightenhover ($colour) {
-    background: lighten($colour, 35%);
-}
-
 @mixin transition($value) {
     transition: $value;
 }

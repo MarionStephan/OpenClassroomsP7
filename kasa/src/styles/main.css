@@ -1,12 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
-@keyframes rotateicon {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(180deg);
-  }
-}
 @keyframes fadeout {
   0% {
     opacity: 1;
@@ -27,7 +19,7 @@
     transform: scale(1);
   }
 }
-@keyframes menu {
+@keyframes collapse {
   0% {
     transform: translatey(1.25rem);
     opacity: 0;
@@ -187,7 +179,7 @@ a {
   margin: 1.9375rem auto;
   width: 63.9375rem;
   opacity: 0;
-  animation: menu 1s forwards;
+  animation: collapse 1s forwards;
 }
 @media screen and (max-width: 992px) {
   .collapse {
@@ -350,6 +342,7 @@ a {
 .card__link {
   width: 30%;
   height: 21.25rem;
+  transition: all 0.3s ease-in-out;
 }
 @media screen and (max-width: 992px) {
   .card__link {
@@ -365,7 +358,6 @@ a {
 .card__link:hover {
   box-shadow: 0.1875rem 0.1875rem 0 0.125rem #FF6060;
   border-radius: 0.6rem;
-  transition: 0.3s ease-in-out;
 }
 .card__link:hover .card__figcaption {
   background: linear-gradient(180deg, rgba(255, 96, 96, 0.6572829816) 3%, rgba(2, 0, 36, 0.604061693) 88%);

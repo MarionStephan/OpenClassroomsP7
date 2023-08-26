@@ -10,7 +10,7 @@
 
     &__infos {
         &__titre {
-            color: $colour-primary;
+            color: $color-primary;
             font-size: 2.25rem;
 
             @include mobile-only {
@@ -19,7 +19,7 @@
         }
 
         &__loc {
-            color: $colour-primary;
+            color: $color-primary;
             font-size: 1.125rem;
 
             @include mobile-only {
@@ -37,7 +37,7 @@
             }
 
             span {
-                background-color: $colour-primary;
+                background-color: $color-primary;
                 @include margin-padding (null, null, all, .125rem 2.5rem);
                 border-radius: .625rem;
                 color: white;
@@ -72,7 +72,7 @@
 
             &__para {
                 text-align: right;
-                color: $colour-primary;
+                color: $color-primary;
                 font-size: 1.125rem;
                 width: 5.8125rem;
 

@@ -30,7 +30,7 @@
         list-style: none;
 
         &__link {
-            color: $colour-primary;
+            color: $color-primary;
             @include mobile-only{
             text-transform: uppercase;
             }

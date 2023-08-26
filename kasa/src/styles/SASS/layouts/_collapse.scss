@@ -7,7 +7,7 @@
     }
 
     opacity: 0;
-    animation: menu 1s forwards;
+    animation: collapse 1s forwards;
 
     &:nth-child(2) {
         @include delay(2 * $delaydebut);
@@ -27,7 +27,7 @@
         align-items: center;
         border-radius: .625rem;
         @include margin-padding(null, null, all, 0 .625rem 0 1.125rem);
-        background-color: $colour-primary;
+        background-color: $color-primary;
     }
 
     &__title {
@@ -42,7 +42,7 @@
 
     &__texte,
     &__list {
-        color: $colour-primary;
+        color: $color-primary;
         @include margin-padding(top, -1.125rem, all, 2.25rem 1.6875rem 1.1875rem 1.125rem);
         background-color: #F6F6F6;
         position: relative;
