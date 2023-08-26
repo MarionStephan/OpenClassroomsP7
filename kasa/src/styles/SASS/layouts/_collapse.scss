@@ -26,20 +26,17 @@
         justify-content: space-between;
         align-items: center;
         border-radius: .625rem;
-        height: 2.9375rem;
-        @include margin-padding(null, null, all, 0 1.875rem 0 1.125rem);
+        @include margin-padding(null, null, all, 0 .625rem 0 1.125rem);
         background-color: $colour-primary;
-        @include mobile-only{
-            height: 1.875rem;
-        }
     }
 
     &__title {
         color: white;
-        font-size: 1.5rem;
-
+        font-size: 1.125rem;
+        @include margin-padding(null, null, all, .8125rem 0);
         @include mobile-only {
             font-size: .8125rem;
+
         }
     }
 
@@ -51,20 +48,21 @@
         position: relative;
         z-index: -1;
         border-radius: .625rem;
-        font-size: 1.5rem;
+        font-size: 1.125rem;
         list-style: none;
+        font-weight: 400;
+        height: 100%;;
 
         @include mobile-only {
             font-size: .75rem;
+        }
+        & li{
+            font-weight: 400;
         }
     }
 
     &__chevron {
         @include transition (0.5s);
-
-        @include mobile-only {
-            width: .8125rem;
-        }
     }
 
     .rotated {

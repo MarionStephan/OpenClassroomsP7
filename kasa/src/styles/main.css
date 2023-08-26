@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
 @keyframes rotateicon {
   0% {
     transform: rotate(0deg);
@@ -107,11 +107,15 @@ a {
   }
 }
 .header__nav {
-  color: #FF6060;
   list-style: none;
 }
 .header__nav__link {
   color: #FF6060;
+}
+@media screen and (max-width: 768px) {
+  .header__nav__link {
+    text-transform: uppercase;
+  }
 }
 .header__nav__link__active {
   text-decoration: underline;
@@ -169,8 +173,7 @@ a {
 .banner__img {
   height: 14rem;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 1.56rem;
   filter: brightness(70%);
 }
@@ -205,18 +208,13 @@ a {
   justify-content: space-between;
   align-items: center;
   border-radius: 0.625rem;
-  height: 2.9375rem;
-  padding: 0 1.875rem 0 1.125rem;
+  padding: 0 0.625rem 0 1.125rem;
   background-color: #FF6060;
-}
-@media screen and (max-width: 768px) {
-  .collapse__header {
-    height: 1.875rem;
-  }
 }
 .collapse__title {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.125rem;
+  padding: 0.8125rem 0;
 }
 @media screen and (max-width: 768px) {
   .collapse__title {
@@ -231,21 +229,21 @@ a {
   position: relative;
   z-index: -1;
   border-radius: 0.625rem;
-  font-size: 1.5rem;
+  font-size: 1.125rem;
   list-style: none;
+  font-weight: 400;
+  height: 100%;
 }
 @media screen and (max-width: 768px) {
   .collapse__texte, .collapse__list {
     font-size: 0.75rem;
   }
 }
+.collapse__texte li, .collapse__list li {
+  font-weight: 400;
+}
 .collapse__chevron {
   transition: 0.5s;
-}
-@media screen and (max-width: 768px) {
-  .collapse__chevron {
-    width: 0.8125rem;
-  }
 }
 .collapse .rotated {
   transform: rotate(180deg);
@@ -271,8 +269,7 @@ a {
 }
 .slideshow__pictures__img {
   flex-shrink: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
   border-radius: 1.5625rem;
 }
@@ -285,6 +282,7 @@ a {
   position: absolute;
   text-align: center;
   top: 50%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   width: 100%;
 }
@@ -378,8 +376,7 @@ a {
   position: relative;
 }
 .card__img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
   height: 100%;
   border-radius: 0.6rem;
@@ -448,7 +445,6 @@ a {
 .logement__infos__titre {
   color: #FF6060;
   font-size: 2.25rem;
-  font-weight: 500;
 }
 @media screen and (max-width: 768px) {
   .logement__infos__titre {
@@ -458,7 +454,6 @@ a {
 .logement__infos__loc {
   color: #FF6060;
   font-size: 1.125rem;
-  font-weight: 500;
 }
 @media screen and (max-width: 768px) {
   .logement__infos__loc {
@@ -492,7 +487,7 @@ a {
 .logement__section {
   display: flex;
   flex-direction: column;
-  align-items: end;
+  align-items: flex-end;
   justify-content: space-between;
 }
 @media screen and (max-width: 768px) {
@@ -548,6 +543,8 @@ a {
 }
 .logement__collapse .collapse {
   width: 36.375rem;
+  display: flex;
+  flex-direction: column;
   margin: 1.9375rem 0;
 }
 @media screen and (max-width: 992px) {

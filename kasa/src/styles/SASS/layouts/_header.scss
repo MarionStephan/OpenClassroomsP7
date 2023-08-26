@@ -27,11 +27,13 @@
     }
 
     &__nav {
-        color: $colour-primary;
         list-style: none;
 
         &__link {
             color: $colour-primary;
+            @include mobile-only{
+            text-transform: uppercase;
+            }
 
             &__active {
                 text-decoration: underline;

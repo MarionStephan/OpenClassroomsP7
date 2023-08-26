@@ -2,7 +2,8 @@
     &__header {
         display: flex;
         justify-content: space-between;
-        @include mobile-only{
+
+        @include mobile-only {
             flex-direction: column;
         }
     }
@@ -11,28 +12,30 @@
         &__titre {
             color: $colour-primary;
             font-size: 2.25rem;
-            font-weight: 500;
-            @include mobile-only{
-            font-size: 1.125rem;
+
+            @include mobile-only {
+                font-size: 1.125rem;
             }
         }
 
         &__loc {
             color: $colour-primary;
             font-size: 1.125rem;
-            font-weight: 500;
-            @include mobile-only{
+
+            @include mobile-only {
                 font-size: .875rem;
-                }
+            }
         }
 
         &__tags {
             display: flex;
             gap: .625rem;
             @include margin-padding (top, 1.25rem, null, null);
-            @include mobile-only{
+
+            @include mobile-only {
                 @include margin-padding (top, .625rem, null, null);
             }
+
             span {
                 background-color: $colour-primary;
                 @include margin-padding (null, null, all, .125rem 2.5rem);
@@ -40,7 +43,8 @@
                 color: white;
                 line-height: 1.5;
                 font-size: .875rem;
-                @include mobile-only{
+
+                @include mobile-only {
                     font-size: .625rem;
                     @include margin-padding (null, null, all, .125rem 1.25rem);
                 }
@@ -52,11 +56,12 @@
     &__section {
         display: flex;
         flex-direction: column;
-        align-items: end;
+        align-items: flex-end;
         justify-content: space-between;
-        @include mobile-only{
+
+        @include mobile-only {
             flex-direction: row-reverse;
-            @include margin-padding (top,1rem,null,null);
+            @include margin-padding (top, 1rem, null, null);
             align-items: center;
         }
 
@@ -70,7 +75,8 @@
                 color: $colour-primary;
                 font-size: 1.125rem;
                 width: 5.8125rem;
-                @include mobile-only{
+
+                @include mobile-only {
                     font-size: .75rem;
                 }
             }
@@ -78,7 +84,8 @@
             &__img {
                 width: 3.125rem;
                 border-radius: 50%;
-                @include mobile-only{
+
+                @include mobile-only {
                     width: 2rem;
                 }
             }
@@ -87,7 +94,8 @@
         &__star {
             display: flex;
             gap: 1.25rem;
-            @include mobile-only{
+
+            @include mobile-only {
                 height: .8125rem;
                 gap: .8125rem;
             }
@@ -97,13 +105,18 @@
     &__collapse {
         display: flex;
         justify-content: space-between;
-        @include tablet-only{
+
+        @include tablet-only {
             flex-direction: column;
         }
+
         .collapse {
             width: 36.375rem;
+            display: flex;
+            flex-direction: column;
             @include margin-padding(all, 1.9375rem 0, null, null);
-            @include tablet-only{
+
+            @include tablet-only {
                 @include margin-padding(all, 1rem 0, null, null);
                 width: 100%;
             }
