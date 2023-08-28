@@ -34,6 +34,7 @@
 
             @include mobile-only {
                 @include margin-padding (top, .625rem, null, null);
+                flex-wrap: wrap;
             }
 
             span {
@@ -46,6 +47,7 @@
 
                 @include mobile-only {
                     font-size: .625rem;
+                    min-width: fit-content;
                     @include margin-padding (null, null, all, .125rem 1.25rem);
                 }
             }
@@ -96,7 +98,7 @@
             gap: 1.25rem;
 
             @include mobile-only {
-                height: .8125rem;
+                height: 1.125rem;
                 gap: .8125rem;
             }
         }
