@@ -11,4 +11,8 @@
     row-gap: 1.75rem;
     @include margin-padding (null,null,bottom,1.75rem);
     font-size: 1.5rem;
+    @include mobile-only{
+        justify-content: center;
+        font-size: .75rem;
+    }
 }
